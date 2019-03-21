@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Our Services</title>
+		<link rel="stylesheet" href="css/basicStyle.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Raleway|PT+Sans+Caption|Muli|Montserrat|Lora|Lato" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+		<style media="screen">
+			body{
+				margin: 0;
+			}
+			.container{
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+				grid-auto-rows: 1fr;
+			}
+			.card{
+				box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+				margin: 15px;
+				border-radius: 5px;
+			}
+			.card-img{
+				width: 100%;
+			}
+			.card-body{
+			 padding: 0px 14px;
+			}
+			.card-title{
+				font-family: "Ubuntu";
+			}
+			.card-desc{
+				color: #333;
+				font-family: "Open Sans";
+				font-size: 15px;
+			}
+			.page-title{
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: tomato;
+				color: #333;
+				margin-top: 80px;
+				font-family: "Ubuntu";
+			}
+
+
+			nav{
+			  position: fixed;
+				top: 0;
+				display: flex;
+				flex-wrap: wrap;
+				background: rgba(0, 0, 0, .7);
+				width: 100%;
+			}
+			.brand{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.brand > h1{
+				color: white;
+				font-size: 1.2em;
+				font-family: "Raleway";
+			}
+			.navbar{
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				margin-left: auto;
+
+			}
+			.navbar > span{
+			  margin: 4px 8px;
+				color: white;
+				font-size: 1em;
+				transition: 0.3s;
+				font-family: "Muli";
+			}
+			a{
+				color: white;
+				text-decoration: none;
+			}
+			.navbar > span:hover{
+				font-size: 1.1em;
+				text-shadow: 0 0 7px black;
+				border-bottom: solid 1px white;
+			}
+			@media only screen and (max-width: 440px) {
+			  nav{
+			    flex-direction: row;
+			  }
+				.navbar{
+					margin: auto;
+				}
+				.brand{
+					margin: auto;
+				}
+			}
+
+
+			footer{
+		  	background: #0d47a1;
+		  	color: white;
+		   font-family: "Lora";
+		  	font-size: medium;
+		  	padding: 8px 10px;
+		  	display: grid;
+		   grid-gap: 4px;
+		  	grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+		  }
+		  footer a{
+		  	text-decoration: none;
+		  	letter-spacing: 1px;
+		  }
+
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class='brand'>
+		<h1>Khalq e Khuda</h1></div>
+			<div class='navbar'>
+				<a href="services/services.html"><span>Our Services</span></a>
+				<span>About Us</span>
+				<span>Donate Us</span>
+			</div>
+		</nav>
+		<h1 class="page-title">Our Services</h1>
+		<div class="container">
+
+			<div class='card'>
+		<img src="https://dailytimes.com.pk/assets/uploads/2018/07/29/DNA-29-12.jpg" class="card-img" />
+			<div class="card-body">
+			<h1 class='card-title'>Plantation</h1>
+			<p class="card-desc">Plantations has been done with many volunteers to make the city Green. By the support of different students and organizations, we have planted so many trees at various places in Gujrat.</p>
+				</div>
+		</div>
+
+
+			<div class='card'>
+		<img src="https://education.umd.edu/sites/education.umd.edu/files/computerLab02_0.jpg" class="card-img" />
+			<div class="card-body">
+			<h1 class='card-title'>Computer Labs</h1>
+			<p class="card-desc">Khalq e Khuda Foundation provides fully customized and advanced computer labs to teach students the most demanding future skills. Courses on different disciplines are present free of cost. You can learn Adobe Photoshop, Web Development and Microsoft Office.</p>
+				</div>
+		</div>
+		</div>
+		<footer>
+			<div>
+<pre>&copy; Khalq e Khuda Foundation
+President: Salman Asif
+Chairman: Ammer Hamza</pre>
+			</div>
+			<div>
+				<p>Website developed by: <a href='https://www.instagram.com/wasif.dev/'><b>Muhammad Wasif</b></a></p>
+				<a href="https://facebook.com/kekfoundation"><i class='fab fa-facebook' style="color:white;font-size:large"></i></a>
+			</div>
+		</footer>
+		</body>
+	</body>
+</html>
