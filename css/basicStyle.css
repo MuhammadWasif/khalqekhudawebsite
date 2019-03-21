@@ -1,0 +1,152 @@
+body, html, .cover{
+  height: 100%;
+	margin: 0;
+}
+/*
+Navbar Styling
+*/
+nav{
+  position: fixed;
+	top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	background: rgba(0, 0, 0, .1);
+	width: 100%;
+}
+.brand{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.brand > h1{
+	color: white;
+	font-size: 1.2em;
+	font-family: "Raleway";
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-left: auto;
+
+}
+.navbar > a{
+  margin: 4px 8px;
+	color: white;
+	font-size: 1em;
+	transition: 0.3s;
+	font-family: "Muli";
+}
+a{
+	color: white;
+  text-decoration: none;
+}
+.navbar > a:hover{
+	font-size: 1.1em;
+	text-shadow: 0 0 7px black;
+	border-bottom: solid 1px white;
+}
+@media only screen and (max-width: 440px) {
+  nav{
+    flex-direction: row;
+  }
+	.navbar{
+		margin: auto;
+	}
+	.brand{
+		margin: auto;
+	}
+}
+
+/*
+Main header styling
+*/
+
+header{
+	background: transparent;
+	color: #333;
+	height: 90vh;
+	width: 100%;
+}
+.intro{
+	height: 100vh;
+	background: url("https://images.pexels.com/photos/9749/hands-water-poor-poverty.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+}
+.cover{
+	background: rgba(0, 0, 0, .4);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cover > h1{
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+.moto{
+	color: white;
+	margin-top: -18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-family: "PT Sans Caption";
+}
+.btn-group{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.btn{
+	background: transparent;
+	border: solid 2px white;
+	color: white;
+	padding: 7px 24px;
+}
+.main-content {
+	padding: 4em 2.5em;
+}
+.main-content > h2{
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.main-content > p{
+	text-align: justify;
+	font-family: "Lora";
+}
+.icon-pack{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+.fa-facebook{
+	color: #3C5A99;
+}
+
+
+
+
+/**
+Footer Styling
+ **/
+
+ footer{
+ 	background: #0d47a1;
+ 	color: white;
+  font-family: "Lora";
+ 	font-size: medium;
+ 	padding: 8px 10px;
+ 	display: grid;
+  grid-gap: 4px;
+ 	grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+ }
+ footer a{
+ 	text-decoration: none;
+ 	letter-spacing: 1px;
+ }
